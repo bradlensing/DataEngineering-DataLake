@@ -7,7 +7,7 @@
 
 ### Deployment
 
-- dl.cfg is a configuration file. Create your own with your AWS user credentials in the root folder containing:
+- dl.cfg is a configuration file. Put in your own AWS user credentials:
 
   [AWS] \
   AWS_ACCESS_KEY_ID = YOUR_AWS_ACCESS_KEY \

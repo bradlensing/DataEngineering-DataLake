@@ -8,7 +8,7 @@ from pyspark.sql.types import TimestampType
 import pyspark.sql.functions as f
 
 config = configparser.ConfigParser()
-config.read('dwh.cfg')
+config.read('_dwh.cfg')
 
 os.environ['AWS_ACCESS_KEY_ID']=config['AWS']['AWS_ACCESS_KEY_ID']
 os.environ['AWS_SECRET_ACCESS_KEY']=config['AWS']['AWS_SECRET_ACCESS_KEY']
