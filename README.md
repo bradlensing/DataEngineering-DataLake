@@ -14,13 +14,14 @@
 
 ### Data Lakes: S3 + Spark(Local) | Running Spark in Local Mode
 
-Using python module pyspark to run spark on local computer. Run it either in Juypter Notebooks or in python scripts. 
-** WARNING: DO NOT USE THIS WITH LARGE DATASETS
+Using python module pyspark to run spark on local computer. Run it either in Juypter Notebooks or in python scripts.
+\*\* WARNING: DO NOT USE THIS WITH LARGE DATASETS
 
 [Data Lake on S3 with Spark (.ipynb file)](./3.1-DataLakeOnS3.ipynb)
+
 <hr>
 
-### Data Lakes: S3 + Spark(EMR) | Creating an AWS EMR Cluster running Spark
+### Creating an AWS EMR Cluster running Spark
 
 <details>
   <summary>In the AWS Console</summary>
@@ -51,7 +52,7 @@ aws emr describe-cluster \
 </details>
 
 <details>
-    <summary>Copying data to EMR Cluster & Logging In SSH</summary>
+    <summary>Copying data to EMR Cluster & Logging in with SSH</summary>
   
 - Run these commands in a terminal that's opened up from the folder contaning the Private AWS Key used to create the EMR cluster, otherwise modify the path to the .pem file.
 
@@ -64,7 +65,14 @@ ssh -i spark-cluster-emr.pem hadoop@<Master public DNS>
 
 </details>
 
+<hr>
+
+### Data Lakes: S3 + Spark(EMR)
+
 [Project: Deploying a Spark job both locally and in EMR. Creates an ETL pipeline reading data from S3 - Transforms Data - Saves back to S3. ](./ProjectFolder)
+
 <hr>
 
 ### Data Lakes: S3 + Serverless(AWS Glue + Athena)
+
+Coming soon!
